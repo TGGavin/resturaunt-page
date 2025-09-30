@@ -32,30 +32,3 @@ h1, h2, h3, h4, h5, h6 {
 #root, #__next {
   isolation: isolate;
 }
-
-
-.bg-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 80vh;
-    justify-items: center;
-}
-.bg-container > img {
-    height: 95vh;
-    /* min-width: fit-content; */
-}
-
-@media (max-width: 1450px) {
-    .bg-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .bg-container > img {
-    height: 100vh;
-    }
-}
-
-@media (max-width: 950px) {
-    .bg-container {
-        grid-template-columns: 1fr;
-    }
-}
