@@ -58,7 +58,7 @@ nav > button:active {
   justify-content: center;
 }
 
-.img-cont > img {
+.img-wrapper > img {
   width: fit-content;
 }
 
