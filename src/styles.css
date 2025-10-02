@@ -61,3 +61,8 @@ nav > button:active {
 .img-cont > img {
   width: fit-content;
 }
+
+h1 {
+  display: flex;
+  justify-content: center;
+}
