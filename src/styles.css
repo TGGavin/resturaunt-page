@@ -58,8 +58,17 @@ nav > button:active {
   justify-content: center;
 }
 
+.img-wrapper {
+  border: transparent solid 2em;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 .img-wrapper > img {
   width: fit-content;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 5px;
 }
 
 h1 {
