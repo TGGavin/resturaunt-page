@@ -38,6 +38,7 @@ nav {
   justify-content: space-evenly;
   padding: 12px;
   box-shadow: 0px 0px 4px 0px;
+  font-size: 2rem;
 }
 
 nav > button {
@@ -49,6 +50,10 @@ nav > button {
 
 nav > button:active {
   box-shadow: 0px 0px 0px;
+}
+
+.res-title {
+  font-size: 5rem;
 }
 
 .splash-cont {
