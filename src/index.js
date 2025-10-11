@@ -7,6 +7,10 @@ const Page = function () {
     const Render = function () {
 
         const content = document.querySelector("#content");
+
+        function clean() {
+            content.innerHTML = "";
+        }
         
         const home = function () {
             const resTitle = document.createElement("h1");
@@ -42,10 +46,6 @@ const Page = function () {
             imgWrapper2.appendChild(splashImg2)
         }
         
-        function clean() {
-            content.innerHTML = "";
-        }
-
         const menu = () => {}
     }
 }
