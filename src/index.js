@@ -47,6 +47,28 @@ const Page = function () {
         }
         
         const menu = () => {
+            function makeMenuItem (name, price, parentElement) {
+                if (typeof name !== "string" ||
+                    typeof price !== "string"
+                ) {
+                    throw new Error("Menu Item Name must be a String")
+                } else if (typeof parentElement !== "object") {
+                    throw new Error("Variable Must be a Dom Node")
+                };
+
+                const itemDiv = document.createElement("div");
+
+                const itemTitle = document.createElement("span");
+                itemTitle.textContent = name;
+
+                const itemPrice = document.createElement("div");
+                itemPrice.textContent = price;
+
+                itemDiv.appendChild(itemTitle);
+                itemDiv.appendChild(itemPrice);
+                parentElement.appendChild(itemDiv);
+            }
+
             const menuDiv = document.createElement("div");
             menuDiv.classList.add("menu");
 
