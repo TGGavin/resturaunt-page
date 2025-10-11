@@ -46,6 +46,6 @@ const Page = function () {
             content.innerHTML = "";
         }
 
-
+        const menu = () => {}
     }
 }
