@@ -75,6 +75,21 @@ const Page = function () {
             const menuTitle = document.createElement("h1");
             menuTitle.textContent = "Cafe Menu";
             menuTitle.classList.add("menu-title");
+
+            const hotCoffSect = document.createElement("section");
+            const hotTitle = document.createElement("h2");
+            hotTitle.textContent = "HOT COFFEE";
+
+
+            hotCoffSect.appendChild(hotTitle)
+            makeMenuItem("Cappucino", "$1.99", hotCoffSect);
+            makeMenuItem("Cottage Cheese Fry", "$2.99", hotCoffSect);
+            makeMenuItem("Velvet Coffee", "$2.99", hotCoffSect);
+            makeMenuItem("Flat White", "$4.99", hotCoffSect);
+            makeMenuItem("Cinnamon Coffee", "$3.99", hotCoffSect);
+            makeMenuItem("Espresso", "$1.99", hotCoffSect);
+            makeMenuItem("Vanilla Late", "$3.99", hotCoffSect);
+            makeMenuItem("Filter Coffee", "$4.99", hotCoffSect);
         }
     }
 }
