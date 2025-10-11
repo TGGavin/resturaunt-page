@@ -46,6 +46,13 @@ const Page = function () {
             imgWrapper2.appendChild(splashImg2)
         }
         
-        const menu = () => {}
+        const menu = () => {
+            const menuDiv = document.createElement("div");
+            menuDiv.classList.add("menu");
+
+            const menuTitle = document.createElement("h1");
+            menuTitle.textContent = "Cafe Menu";
+            menuTitle.classList.add("menu-title");
+        }
     }
 }
