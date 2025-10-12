@@ -135,5 +135,17 @@ const Content = function () {
             menuDiv.appendChild(coldCoffSect)
             menuDiv.appendChild(dessertSect);
         }
+        return {
+            clean,
+            home,
+            menu,
+        }
+    }
+    return {
+        Render,
     }
 }
+
+const contentHandler = Content();
+const render = contentHandler.Render();
+render.menu();
