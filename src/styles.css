@@ -99,7 +99,6 @@ h1 {
   justify-self: center;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 600px));
-  /* grid-template-columns: repeat(2, 1fr); */
   font-size: 1.5rem;
   gap: 40px;
 }
