@@ -114,6 +114,19 @@ const Page = function () {
             makeMenuItem("Belgian Chocolate", "$1.99", coldCoffSect);
             makeMenuItem("Crunchy Frappe", "$3.99", coldCoffSect);
             makeMenuItem("Chocolate Shake", "$4.99", coldCoffSect);
+
+            const dessertSect = document.createElement("section");
+            const dessertTitle = document.createElement("h2");
+            dessertTitle.textContent = "DESSERT";
+            dessertSect.appendChild(dessertTitle);
+            makeMenuItem("Cheesecake", "$1.99", dessertSect);
+            makeMenuItem("Choco Fantasy", "$2.99", dessertSect);
+            makeMenuItem("Brownie", "$4.99", dessertSect);
+            makeMenuItem("Choco Fudge", "$1.99", dessertSect);
+            makeMenuItem("Vanilla Scoop", "$3.99", dessertSect);
+            makeMenuItem("Berry Cheesecake", "$1.99", dessertSect);
+            makeMenuItem("Strawberry Cake", "$3.99", dessertSect);
+            makeMenuItem("Red Velvet Cake", "$4.99", dessertSect);
         }
     }
 }
