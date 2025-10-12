@@ -101,6 +101,19 @@ const Page = function () {
             makeMenuItem("Veg Pizza", "$1.99", snackSect);
             makeMenuItem("Chicken Pockets", "$3.99", snackSect);
             makeMenuItem("Pita Bread", "$4.99", snackSect);
+
+            const coldCoffSect = document.createElement("section");
+            const coldTitle = document.createElement("h2");
+            coldTitle.textContent = "COLD COFFEE";
+            coldCoffSect.appendChild(coldTitle);
+            makeMenuItem("Vegan Shake", "$1.99", coldCoffSect);
+            makeMenuItem("Cold Coffee", "$2.99", coldCoffSect);
+            makeMenuItem("Cold Mocha", "$4.99", coldCoffSect);
+            makeMenuItem("Iced Tea", "$1.99", coldCoffSect);
+            makeMenuItem("Chilled Late", "$3.99", coldCoffSect);
+            makeMenuItem("Belgian Chocolate", "$1.99", coldCoffSect);
+            makeMenuItem("Crunchy Frappe", "$3.99", coldCoffSect);
+            makeMenuItem("Chocolate Shake", "$4.99", coldCoffSect);
         }
     }
 }
