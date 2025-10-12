@@ -127,6 +127,13 @@ const Content = function () {
             makeMenuItem("Berry Cheesecake", "$1.99", dessertSect);
             makeMenuItem("Strawberry Cake", "$3.99", dessertSect);
             makeMenuItem("Red Velvet Cake", "$4.99", dessertSect);
+
+            content.appendChild(menuDiv);
+            menuDiv.appendChild(menuTitle);
+            menuDiv.appendChild(hotCoffSect);
+            menuDiv.appendChild(snackSect);
+            menuDiv.appendChild(coldCoffSect)
+            menuDiv.appendChild(dessertSect);
         }
     }
 }
