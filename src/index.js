@@ -79,8 +79,6 @@ const Page = function () {
             const hotCoffSect = document.createElement("section");
             const hotTitle = document.createElement("h2");
             hotTitle.textContent = "HOT COFFEE";
-
-
             hotCoffSect.appendChild(hotTitle)
             makeMenuItem("Cappucino", "$1.99", hotCoffSect);
             makeMenuItem("Cottage Cheese Fry", "$2.99", hotCoffSect);
@@ -90,6 +88,19 @@ const Page = function () {
             makeMenuItem("Espresso", "$1.99", hotCoffSect);
             makeMenuItem("Vanilla Late", "$3.99", hotCoffSect);
             makeMenuItem("Filter Coffee", "$4.99", hotCoffSect);
+            
+            const snackSect = document.createElement("section");
+            const snackTitle = document.createElement("h2");
+            snackTitle.textContent = "SNACKS";
+            snackSect.appendChild(snackTitle);
+            makeMenuItem("Sandwich", "$1.99", snackSect);
+            makeMenuItem("Cottage Cheese Fry", "$2.99", snackSect);
+            makeMenuItem("Garlic Bread", "$4.99", snackSect);
+            makeMenuItem("Bread Sticks", "$1.99");
+            makeMenuItem("Veg Burger", "$3.99", snackSect);
+            makeMenuItem("Veg Pizza", "$1.99", snackSect);
+            makeMenuItem("Chicken Pockets", "$3.99", snackSect);
+            makeMenuItem("Pita Bread", "$4.99", snackSect);
         }
     }
 }
