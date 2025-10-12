@@ -96,7 +96,7 @@ const Content = function () {
             makeMenuItem("Sandwich", "$1.99", snackSect);
             makeMenuItem("Cottage Cheese Fry", "$2.99", snackSect);
             makeMenuItem("Garlic Bread", "$4.99", snackSect);
-            makeMenuItem("Bread Sticks", "$1.99");
+            makeMenuItem("Bread Sticks", "$1.99", snackSect);
             makeMenuItem("Veg Burger", "$3.99", snackSect);
             makeMenuItem("Veg Pizza", "$1.99", snackSect);
             makeMenuItem("Chicken Pockets", "$3.99", snackSect);
