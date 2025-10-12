@@ -2,7 +2,7 @@ import "./styles.css";
 import applepieImg from "./img/apple-pie.jpg"
 import pancakeImg from "./img/pancakes.jpg"
 
-const Page = function () {
+const Content = function () {
 
     const Render = function () {
 
