@@ -135,10 +135,27 @@ const Content = function () {
             menuDiv.appendChild(coldCoffSect)
             menuDiv.appendChild(dessertSect);
         }
+        
+        const about = function () {
+            const aboutCont = document.createElement("div");
+            aboutCont.classList.add("about");
+            
+            const aboutTitle = document.createElement("h1");
+            aboutTitle.textContent = "About The Resturaunt of All Time";
+
+            const aboutDesc = document.createElement("p");
+            aboutDesc.textContent = "The Restaurant of All Time. This restaurant was, and is a restaurant during the time of is. It is a restaurant and will continue to be a restaurant of all time. There was once, and there currently is a restaurant. Fourth of its name, it is Restaurant."
+            
+            aboutCont.appendChild(aboutTitle);
+            aboutCont.appendChild(aboutDesc)
+            content.appendChild(aboutCont)
+        }
+     
         return {
             clean,
             home,
             menu,
+            about,
         }
     }
     return {
@@ -148,4 +165,4 @@ const Content = function () {
 
 const contentHandler = Content();
 const render = contentHandler.Render();
-render.menu();
+render.about();
