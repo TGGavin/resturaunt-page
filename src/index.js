@@ -158,11 +158,36 @@ const Content = function () {
             about,
         }
     }
+    
+    const controller = function () {
+        const render = Render();
+
+        const homeBtn = document.querySelector(".home-btn");
+        const menuBtn = document.querySelector(".menu-btn");
+        const aboutBtn = document.querySelector(".about-btn");
+
+        homeBtn.addEventListener("click", () => {
+            render.clean();
+            render.home();
+        })
+
+        menuBtn.addEventListener("click", () => {
+            render.clean();
+            render.menu();
+        })
+
+        aboutBtn.addEventListener("click", () => {
+            render.clean();
+            render.about();
+        })
+
+    }
+
+    // Initialize homepage
+    Render().home();
+
     return {
-        Render,
+        controller,
     }
 }
-
-const contentHandler = Content();
-const render = contentHandler.Render();
-render.about();
+Content().controller()
